@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Pseudo Classes and Elements</title>
+	</head>
+	<style>
+		/* pseudo classes - define special state of an element a:hover
+		pseudo elements - define style for specific part of an element */
+
+		/* These pseudo classes must be used in this order */
+
+		/* link - pseudo class */
+		/* define normal state of link before user visits */
+		/* a:link {
+			font-size: 35px;
+			text-decoration: none;
+			color: green;
+		} */
+
+		/* visited - pseudo class */
+		/* define normal state of link after user visits */
+		/* a:visited {
+			color: goldenrod;
+		} */
+
+		/* hover - pseudo class */
+		/* define style when mouse over link */
+		/* a:hover {
+			color: grey;
+		} */
+
+		/* active - pseudo class */
+		/* define style while it's clicked */
+		/* a:active {
+			color: skyblue;
+		} */
+
+		.dropdown-content a {
+			display: none;
+		}
+
+		.dropdown:hover .dropdown-content a {
+			display: block;
+		}
+	</style>
+	<body>
+		<!-- <a href="https://www.google.com">Click Here</a> -->
+
+		<div class="dropdown">
+			<a href="#">Items</a>
+			<div class="dropdown-content">
+				<a href="#">item 1</a>
+				<a href="#">item 2</a>
+				<a href="#">item 3</a>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<!-- <link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+			rel="stylesheet"
+		/> -->
+		<title>Text Formatting</title>
+	</head>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+		/* div block level element */
+		div {
+			text-align: right;
+			border: 2px solid red;
+		}
+
+		h1 {
+			font-family: 'Montserrat', sans-serif;
+			font-style: italic;
+		}
+		p {
+			display: inline;
+			background-color: green;
+			color: white;
+			font-size: 25px;
+			font-weight: bold;
+			/* text align doesn't work on an inline element - has to be on parent */
+			/* text-align: right; */
+		}
+	</style>
+	<body>
+		<h1>This is Heading Element</h1>
+		<div>
+			<p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+		</div>
+	</body>
+</html>

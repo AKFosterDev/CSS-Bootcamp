@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Absolute</title>
+	</head>
+	<style>
+		/* Absolute units - fixed (px = 1/96 of 1") */
+		/* Relative units - relative to another property (em, rem, vw, vh, %) */
+		/* em - calculated by closest parent's size */
+		/* rem - calculated by html element */
+
+		body {
+			font-size: 20px;
+		}
+		h1,
+		p {
+			font-size: 3rem;
+		}
+
+		div {
+			font-size: 10px;
+		}
+	</style>
+	<body>
+		<h1>Heading</h1>
+		<div>
+			<p>Paragraph</p>
+		</div>
+	</body>
+</html>

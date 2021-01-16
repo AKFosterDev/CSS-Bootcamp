@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CSS Transitions</title>
+	</head>
+	<style>
+		/* transition-property (required) - defines property you want to add effect to */
+		/* transition-duration (required) - defines how long you want transition to continue */
+		/* transition delay (optional) - defines delay time of effect */
+		/* transition-timing-function (optional) - defines different speeds of effects while transition happens */
+
+		.box {
+			width: 200px;
+			height: 200px;
+			background-color: crimson;
+			/* transition-property: width; */
+			/* transition-duration: 1s; */
+			/* transition-delay: 0.5s; */
+			/* transition-timing-function: ease-in-out; */
+			/* transition-timing-function: cubic-bezier(0.02, 0.97, 0.67, 0.32); */
+			/* transition: width 1s ease-in, background-color 5s; */
+			transition: all 1s ease-in;
+		}
+
+		.box:hover {
+			width: 400px;
+			background-color: grey;
+		}
+	</style>
+	<body>
+		<div class="box"></div>
+	</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Floats</title>
+	</head>
+	<style>
+		/* Floats allow you to take an element out of the normal flow and place it all the way left or right in parent container. Use width property. */
+
+		.container {
+			background-color: grey;
+			border-top: 20px solid blueviolet;
+			border-bottom: 20px solid black;
+			overflow: auto;
+		}
+
+		.left {
+			background-color: crimson;
+			width: 100px;
+			height: 100px;
+			float: left;
+		}
+
+		.right {
+			background-color: chartreuse;
+			width: 100px;
+			height: 100px;
+			float: right;
+		}
+
+		/* .clear {
+			clear: both;
+		} */
+
+		/* Clearfix */
+		.clearfix::after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+	</style>
+	<body>
+		<div class="container clearfix">
+			<div class="left"></div>
+			<div class="right"></div>
+			<!-- <div class="clear"></div> -->
+		</div>
+	</body>
+</html>
